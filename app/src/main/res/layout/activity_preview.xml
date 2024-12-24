@@ -12,7 +12,7 @@
         android:id="@+id/mescd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="#CFFFF7"
+        app:cardBackgroundColor="#C5FFF2"
         app:cardCornerRadius="17dp"
         app:cardElevation="5dp"
         app:cardUseCompatPadding="true">
@@ -23,6 +23,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
+
+            android:textColor="@color/black"
             tools:text="i will write a long message so that the message preview can go to the next line and we can se how it looks " />
 
 
@@ -42,6 +44,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
 
-        android:text="send message" />
+        android:text="@string/send_message" />
 
 </LinearLayout>

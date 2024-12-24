@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">falkenSelfPromoApp</string>
+    <string name="app_name">falkenSelfPromoApp</string>   <!-- language translation -->
+    <string name="contact_name">Contact Name</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="display_name">Display Name</string>
+    <string name="include_junior">Include \'Junior\'</string>
+    <string name="immidiate_start">Immidiate Start</string>
+    <string name="available_from_date">Available from date</string>
+    <string name="preview_message">Preview Message</string>
+    <string name="send_message">send message</string>
 </resources>

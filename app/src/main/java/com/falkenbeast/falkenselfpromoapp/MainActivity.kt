@@ -76,20 +76,34 @@ class MainActivity : AppCompatActivity() {
         // val teststring = contactname?.text.toString() + ", " + contactnumber?.text.toString()
 
 
-       val previeActivityIntent = Intent(this, PreviewActivity::class.java)
+
+        val message = Message(
+            binding.nameid.text.toString(),
+            binding.numberid.text.toString(),
+            binding.displaynameid.text.toString(),
+            binding.checkboxjid.isChecked,
+            binding.listspinnerid.selectedItem?.toString() ,
+            binding.imstartid.isChecked,
+            binding.availabledateid.text.toString()           //can have both variable as well as direct argumernts
 
 
-        previeActivityIntent.putExtra("contactname", contactName)
+
+        )
+
+        val previewActivityIntent = Intent(this, PreviewActivity::class.java)
+        previewActivityIntent.putExtra("Messega", message)
+
+     /*   previeActivityIntent.putExtra("contactname", contactName)
        previeActivityIntent.putExtra("contactnumber", contactNumber)
         previeActivityIntent.putExtra("displayname", displayName)
         previeActivityIntent.putExtra("startdate",  startDate)
         previeActivityIntent.putExtra("addjunior", isJunior)
         previeActivityIntent.putExtra("immediatestart", isImmediateStart)
-        previeActivityIntent.putExtra("jobtitle", jobTitle)
+        previeActivityIntent.putExtra("jobtitle", jobTitle)*/
 
 
 
-        startActivity(previeActivityIntent)
+        startActivity(previewActivityIntent)
 
 
 
