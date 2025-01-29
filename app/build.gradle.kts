@@ -1,14 +1,14 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    id("kotlin-parcelize")
+
 
 }
 
 
 android {
     namespace = "com.falkenbeast.falkenselfpromoapp"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.falkenbeast.falkenselfpromoapp"
